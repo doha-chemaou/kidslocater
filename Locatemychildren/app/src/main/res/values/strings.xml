@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">KidsLocater</string>
+    <string name="forgotten_password"> Mot de passe oublié ? </string>
+    <string name = "password"> Mot de passe </string>
+    <string name= "email_tel"> Téléphone ou e-mail</string>
+    <string name="connexion"> Connexion</string>
+    <string name="nv_cpt"> Créer un nouveau compte KidsLocates</string>
+    <string name="cvav"> Comment vous appelez-vous ?</string>
+    <string name="prenom"> Prénom </string>
+    <string name="nom"> Nom de famille </string>
+    <string name="suivant" > Suivant </string>
+    <string name="qevdn"> Quelle est votre date de naissance </string>
+    <string name="qevg"> Quelle est votre genre ? </string>
+    <string name="femme"> Femme </string>
+    <string name="homme"> Homme </string>
+    <string name="age_confirmation"> Confirmez votre anniversaire </string>
+    <string name="oui"> Oui </string>
+    <string name="non"> Non </string>
+
+    <string name="evndtm">Entrez votre numéro de téléphone mobile</string>
+    <string name="evae">Entrez votre adresse e-mail</string>
+    <string name="cumdp"> Choisissez un mot de passe </string>
+
+    <string name="nm"> Numéro de mobile </string>
+    <string name="ae"> Adresse e-mail </string>
+
+    <string name="mailinscr"> S\'inscrire avec une adresse e-mail </string>
+    <string name="phoneinscr"> S\'inscrire avec un numéro de mobile </string>
+
+
+</resources>
