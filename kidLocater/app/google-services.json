@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "443103433193",
+    "project_id": "kidslocater",
+    "storage_bucket": "kidslocater.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443103433193:android:15ebe1f92adbd493eb7b78",
+        "android_client_info": {
+          "package_name": "com.example.kidlocater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443103433193-q5k24luspi2k5btd6sfufgtjmtdgpcga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAorHXwIpsQUME6qllmYf6pChydyusJp8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443103433193-q5k24luspi2k5btd6sfufgtjmtdgpcga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

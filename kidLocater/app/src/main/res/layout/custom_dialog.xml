@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/birthdaydialog"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:ignore="MissingConstraints"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/age_confirmation"
+        android:textSize="17dp"
+        android:layout_marginTop="25dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/qu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="25dp"
+    android:layout_marginBottom="10dp">
+    <TextView
+        android:id="@+id/oui"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="220dp"
+        android:textAlignment="center"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textColor="@color/light_green"
+        android:text="OUI"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:clickable="true"
+        tools:ignore="OnClick"
+        />
+
+    <TextView
+        android:id="@+id/non"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="160dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/light_black"
+        android:text="NON"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:clickable="true"
+        tools:ignore="OnClick"
+
+        />
+</RelativeLayout>
+
+<!--android:layout_marginStart="16dp"
+android:layout_marginEnd = "16dp"
+app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"-->
+</LinearLayout>

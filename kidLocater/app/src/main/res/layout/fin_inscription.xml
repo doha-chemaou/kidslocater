@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Num_Tel"
+    android:background="@color/white"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"/>
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:id="@+id/inscr"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Inscription"
+        android:layout_centerVertical="true"/>-->
+        <Button
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/inscr"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:hint="Inscription"
+        android:padding="4dp"
+        android:background="@layout/yellow_button"
+        android:textColorHint="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints"
+    android:background="@color/white"
+    tools:context=".Nom">
+    <include
+        android:id="@+id/name"
+        layout="@layout/toolbar"
+        style="@style/EditTextThemeOverlayNom" />
+<!--
+    <TextView
+        android:id="@+id/prenom_before"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/prenom_after"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/current_prenom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/current_nom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/cvav"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+<!--app:boxBackgroundColor="@android:color/transparent"
+        android:background="@android:color/transparent"-->
+
+    <!--version 1 of error -->
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/error"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="invisible"
+        android:drawableEnd="@drawable/ic_baseline_error_24"
+        app:endIconMode="custom"
+        />
+        -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/error"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_red_light"
+        android:drawableEnd="@drawable/ic_baseline_error_24"
+        app:endIconMode="custom"
+        />
+
+ <!--
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/error_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:errorEnabled="true">
+    </com.google.android.material.textfield.TextInputLayout>
+-->
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_baseline_error_24"
+        app:errorIconTintMode="multiply"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:id="@+id/error_space"
+        app:endIconMode="custom"
+        app:endIconTintMode="multiply"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        tools:ignore="Suspicious0dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--  <EditText
+        app:errorEnabled="true"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:id="@+id/error_space"
+        android:drawableEnd="@drawable/ic_baseline_error_24"
+        app:endIconMode="custom"
+        tools:ignore="Suspicious0dp"
+        />-->
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+
+
+<!--
+android:focusableInTouchMode="false"
+        android:focusable="true"-->
+        <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/prenom"
+        app:boxBackgroundColor="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:theme="@style/EditTextThemeOverlayNom"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:endIconDrawable="@drawable/clear_icon"
+        app:endIconMode="clear_text"
+        app:endIconTintMode="multiply"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prenom"
+            android:id="@+id/edit_prenom"
+            android:fontFamily="sans-serif"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nom"
+        app:boxBackgroundColor="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        app:endIconDrawable="@drawable/clear_icon"
+        app:endIconMode="clear_text"
+        app:endIconTintMode="multiply"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/EditTextThemeOverlayNom">
+        <!--app:endIconMode="clear_text"-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nom"
+            android:id="@+id/edit_nom"
+            android:fontFamily="sans-serif"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/n_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/suivant"
+        android:padding="4dp"
+        android:background="@layout/orange_button"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test"/>
+
+</LinearLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="@string/qevg"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp"
+    android:textAlignment="center"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+        />
+    <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    <RadioButton
+        android:id="@+id/yes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:text="@string/femme"
+        android:textColor="#000" />
+    <RadioButton
+        android:id="@+id/no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:text="@string/homme"
+        android:textColor="#000" />
+    </RadioGroup>
+        </LinearLayout>-->

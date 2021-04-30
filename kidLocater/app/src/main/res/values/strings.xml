@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">KidLocater</string>
+    <string name="forgotten_password"> Mot de passe oublié ? </string>
+    <string name = "password"> Mot de passe </string>
+    <string name= "email_tel"> Téléphone ou e-mail</string>
+    <string name="connexion"> Connexion</string>
+    <string name="nv_cpt"> Créer un nouveau compte KidsLocates</string>
+    <string name="cvav"> Comment vous appelez-vous ?</string>
+    <string name="prenom"> Prénom </string>
+    <string name="nom"> Nom de famille </string>
+    <string name="suivant" > Suivant </string>
+    <string name="qevdn"> Quelle est votre date de naissance </string>
+    <string name="qevg"> Quelle est votre genre ? </string>
+    <string name="femme"> Femme </string>
+    <string name="homme"> Homme </string>
+    <string name="age_confirmation">Confirmez votre anniversaire </string>
+    <string name="oui"> Oui </string>
+    <string name="non"> Non </string>
+
+    <string name="evndtm">Entrez votre numéro de téléphone mobile</string>
+    <string name="evae">Entrez votre adresse e-mail</string>
+    <string name="cumdp"> Choisissez un mot de passe </string>
+
+    <string name="nm"> Numéro de mobile </string>
+    <string name="ae"> Adresse e-mail </string>
+
+    <string name="mailinscr"> S\'inscrire avec une adresse e-mail </string>
+    <string name="phoneinscr"> S\'inscrire avec un numéro de mobile </string>
+
+    <string name="vvalcdvc"> Voulez-vous arrêter la création de votre compte ?</string>
+    <string name="svamvptvp"> Si vous arrêtez maintenant, vous perderez toute votre progression.</string>
+    <string name="pourCreation"> Poursuivre la création du compte </string>
+    <string name="arretCreation"> Arrêter la création du compte </string>
+
+    <string name="rejoignez"> Rejoignez KidsLocater </string>
+    <string name="aide"> Nous vous aiderons à créer un compte en quelques étapes </string>
+    <string name="compteExistant"> Vous avez déjà un compte ?  </string>
+
+
+
+
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name ="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_700</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="android:windowAnimationStyle">@style/animation</item>
+        <item name="android:windowContentTransitions">true</item>
+
+        <!--<item name="android:textColorPrimary">@color/purple_700</item>
+        <item name="android:textColorSecondary">@color/blue</item>
+        <item name="android:textColorTertiary">@color/text_color_tertiary</item>-->
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:colorAccent">#0000FF</item>
+    </style>
+
+    <style name="MaterialAlertDialog_OUI_color" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!-- Style for positive button -->
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle.textColor</item>
+    </style>
+
+    <style name="PositiveButtonStyle.textColor" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/purple_500</item>
+    </style>
+
+    <style name="animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="datepicker">
+        <item name="android:textColorPrimary">#7c4dff</item>
+        <item name="colorControlNormal">#7c4dff</item>
+    </style>
+
+    <style name="ErrorTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/holo_orange_dark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="HelperTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/holo_green_dark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="HintTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/holo_green_dark</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!--<style name="EditTextThemeOverlayNom" parent="ThemeOverlay.AppCompat">-->
+    <style name="EditTextThemeOverlayNom">
+    <item name="colorAccent">@color/light_orange</item>
+    </style>
+
+    <style name="EditTextThemeOverlayDateNaissance" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/light_green</item>
+    </style>
+
+    <style name="EditTextThemeOverlayGenre">
+        <item name="colorAccent">@color/yellow</item>
+    </style>
+
+    <style name="EditTextThemeOverlaNumTel">
+        <item name="colorAccent">@color/pink</item>
+    </style>
+
+    <style name="EditTextThemeOverlaEmail">
+        <item name="colorAccent">@color/light_blue</item>
+    </style>
+
+    <style name="EditTextThemeOverlaPassword">
+        <item name="colorAccent">@color/brown</item>
+    </style>
+
+<!--
+    <style name="EditTextThemeOverlay" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/holo_blue_light</item>
+    </style>-->
+
+    <style name="TextAppearence.App.TextInputLayout"
+        parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/black</item>
+        <item name="colorControlNormal">@color/light_orange</item>
+        <item name="colorControlActivated">@color/light_orange</item>
+        <item name="colorControlHighlight">@color/light_orange</item>
+
+    </style>
+
+    <!--
+        <style name="RightJustifyTextView" parent="@android:style/Widget.TextView">
+            <item name="android:gravity">right|center_vertical</item>
+        </style>
+
+        <style name="RightJustifyDialogWindowTitle" parent="@android:style/DialogWindowTitle" >
+            <item name="android:gravity">right|center_vertical</item>
+        </style>
+
+        <style name="RightJustifyTheme" parent="@android:style/Theme.Dialog.Alert">
+            <item name="android:textViewStyle">@style/RightJustifyTextView</item>
+            <item name="android:windowTitleStyle">@style/RightJustifyDialogWindowTitle</item>
+        </style>
+    -->
+</resources>
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+    <style name="AppBlankTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <item name="colorPrimary">@color/primary</item>
+            <item name="colorPrimaryDark">@color/primary_dark</item>
+            <item name="colorAccent">@color/accent</item>
+        </style>
+        <style name="AppTheme" parent="AppBlankTheme">
+            <item name="windowNoTitle">true</item>
+            <item name="windowActionBar">false</item>
+            <item name="spinnerDropDownItemStyle">@style/mydropdown</item>
+        </style>
+    </resources>-->
+

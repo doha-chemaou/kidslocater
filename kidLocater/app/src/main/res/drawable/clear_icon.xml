@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="3dp"
+        android:top="1.5dp"
+        android:right="1.5dp"
+        android:drawable="@drawable/clear_icon_background"
+        android:gravity="center_horizontal|center_vertical"
+        android:width="20dp"
+        android:height="20dp"
+        />
+    <item
+        android:drawable="@drawable/ic_baseline_clear_24"
+        android:gravity="center_horizontal|center_vertical"
+        android:width="20dp"
+        android:height="20dp"
+        />
+</layer-list>

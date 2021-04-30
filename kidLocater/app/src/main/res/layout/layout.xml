@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+       <!-- <ImageView
+            android:id="@+id/accueil"
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            app:srcCompat="@drawable/kids1"
+            tools:ignore="MissingConstraints" />-->
+        <!--<ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/small_map"
+            android:transitionName="logo_image"
+            android:id="@+id/logo_image"
+            />-->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/web_photo_editor"
+            android:transitionName="logo_image"
+            android:id="@+id/logo_image"/>
+
+        <TextView
+            android:id="@+id/logo_name"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_image"
+            android:fontFamily="@font/aguafina_script"
+            android:text="Soyez plus proche de votre enfant"
+            android:paddingLeft="40dp"
+            android:textColor="#03a9f4"
+            android:textSize="25sp"
+            android:transitionName="logo_text" />
+
+        <!--<EditText
+            android:id="@+id/email_or_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="40dp"
+            android:hint="Téléphone ou e-mail"
+            android:padding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@+id/logo_name"
+            android:id="@+id/tel_email"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_tel"
+                android:fontFamily="sans-serif"
+                android:inputType="textEmailAddress"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@id/tel_email"
+            android:id="@+id/password"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleEnabled="true">
+            <!--app:endIconMode="password_toggle"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:fontFamily="sans-serif"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--<EditText
+            app:passwordToggleEnabled="true"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:fontFamily="sans-serif"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:padding="17dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <Button
+            android:layout_below="@id/password"
+            android:id="@+id/connexion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:hint="@string/connexion"
+            android:padding="4dp"
+            android:background="@layout/mybutton"
+            android:textColorHint="@color/white" />
+        <TextView
+            android:id="@+id/fpw"
+            android:layout_below="@id/connexion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/forgotten_password"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            />
+
+        <Button
+            android:layout_below="@+id/fpw"
+            android:id="@+id/nv_cpt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="@string/nv_cpt"
+            android:padding="4dp"
+            android:background="@layout/blue_button"
+            android:textColorHint="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--TextInput layout which acts as a wrapper to the edit text-->
+
+    <!--Enabling the password toggle>
+        app:passwordToggleEnabled="true"
+     applying the tint to the password visibility toggle-->
+
+    <!--
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
+            android:hint="Mot de passe"
+            app:passwordToggleTint="@color/purple_500"
+            android:scrollbarSize="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+    <com.google.android.material.textfield.TextInputEditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="30dp"
+    android:inputType="textPassword"
+    android:ems="15"/>
+        </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/accueil"
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            app:srcCompat="@drawable/kids1"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="to do" />
+        <EditText
+            android:id="@+id/email_or_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="40dp"
+            android:hint="Téléphone ou e-mail"
+            android:inputType="textEmailAddress|phone"
+            android:padding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Mot de passe"
+            android:padding="17dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:hint="Connexion"
+            android:padding="4dp"
+            android:background="@layout/mybutton"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    -->
+
+    <!--
+     app:passwordToggleEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+    -->
+
+    <!--
+    <com.google.android.material.textfield.TextInputLayout
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/purple_200"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Mot de passe"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+    -->

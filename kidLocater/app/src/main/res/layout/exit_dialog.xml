@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/exitdialog"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:ignore="MissingConstraints"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/exit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/vvalcdvc"
+        android:textSize="18dp"
+        android:layout_marginTop="25dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/exit_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/svamvptvp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/grey"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+
+        />
+<!--    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp">-->
+        <TextView
+            android:id="@+id/pourCreation"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/light_black"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/pourCreation"
+            android:textSize="15dp"
+            android:onClick="onClick"
+            android:clickable="true"
+            tools:ignore="OnClick"
+            />
+
+        <TextView
+            android:id="@+id/arretCreation"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+
+            android:text="@string/arretCreation"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"
+            android:onClick="onClick"
+            android:clickable="true"
+            tools:ignore="OnClick"
+
+            />
+    <!--android:textColor="@color/bluee"-->
+    <!--</RelativeLayout>-->
+
+    <!--android:layout_marginStart="16dp"
+    android:layout_marginEnd = "16dp"
+    app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"-->
+</LinearLayout>
